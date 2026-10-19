@@ -42,8 +42,11 @@ em.it{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--acc
 #prog{position:fixed;top:0;left:0;height:2px;width:0;z-index:100;background:linear-gradient(90deg,var(--accent),var(--gold))}
 #spot{position:fixed;width:640px;height:640px;border-radius:50%;pointer-events:none;z-index:0;background:radial-gradient(circle,rgba(75,227,176,.05),transparent 65%);transform:translate(-50%,-50%);left:-999px;top:-999px}
 /* header */
-header{position:fixed;inset:0 0 auto 0;z-index:70;transition:background .3s,border-color .3s;padding-top:var(--sa-t);border-bottom:1px solid transparent}
-header.s,body.menu header{background:rgba(7,9,13,.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom-color:var(--line)}
+header{position:fixed;inset:0 0 auto 0;z-index:70;transition:border-color .3s;padding-top:var(--sa-t);border-bottom:1px solid transparent}
+header:before{content:"";position:absolute;inset:0;z-index:-1;background:rgba(7,9,13,.84);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);opacity:0;transition:opacity .3s}
+header.s,body.menu header{border-bottom-color:var(--line)}
+header.s:before,body.menu header:before{opacity:1}
+.menu-cta{display:none}
 nav{display:flex;align-items:center;justify-content:space-between;height:var(--hdr)}
 .logo{display:flex;align-items:center;gap:12px;font:600 15px var(--sans);min-height:44px}
 .logo i{width:38px;height:38px;border-radius:50%;border:1px solid var(--line2);display:grid;place-items:center;font:italic 400 19px var(--serif);color:var(--accent);background:rgba(7,9,13,.5)}
@@ -256,8 +259,14 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
  .burger{display:block}.nav-btn{display:none}
  .links{position:fixed;inset:0;flex-direction:column;justify-content:center;gap:4px;padding:calc(var(--hdr) + var(--sa-t)) var(--gut) calc(40px + var(--sa-b));background:rgba(7,9,13,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);opacity:0;visibility:hidden;transition:.3s;z-index:-1}
  body.menu .links{opacity:1;visibility:visible}
- .links a{font:400 clamp(34px,9vw,52px)/1.2 var(--serif);padding:8px 0;color:var(--soft)}
- .links a.on{color:var(--accent)}.links a.on:after{display:none}
+ .links li{border-bottom:1px solid var(--line)}
+ .links a{font:400 clamp(32px,9vw,48px)/1.15 var(--serif);padding:14px 0;color:var(--soft);display:flex;justify-content:space-between;align-items:center}
+ .links li:not(.menu-cta) a:after{content:"\2197";font:400 18px var(--sans);color:var(--muted)}
+ .links a.on{color:var(--accent)}
+ .links li:not(.menu-cta) a.on:after{display:block;position:static;width:auto;height:auto;background:none;color:var(--accent)}
+ .links .menu-cta{display:block;border:0;margin-top:26px}
+ .links .menu-cta a{font:600 15px var(--sans);padding:0 28px;color:var(--onacc);justify-content:center}
+ .links .menu-cta a:after{display:none}
 }
 /* ===== phone ===== */
 @media(max-width:760px){
@@ -363,6 +372,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   <ul class="links" id="links">
     <li><a href="#about">About</a></li><li><a href="#swap">Operations</a></li><li><a href="#experience">Experience</a></li>
     <li><a href="#network">Strategy</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li>
+    <li class="menu-cta"><a class="btn p" href="mailto:ddevyani283@gmail.com">Email me <svg class="i"><use href="#arrow"/></svg></a></li>
   </ul>
   <div style="display:flex;gap:10px;align-items:center"><a class="btn p nav-btn" href="#contact" style="padding:0 22px;min-height:44px;font-size:13.5px">Get in touch <svg class="i"><use href="#arrow"/></svg></a><button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="links"><span></span><span></span></button></div>
 </nav></div></header>
