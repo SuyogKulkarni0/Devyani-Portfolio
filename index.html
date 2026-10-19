@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07090d">
+<meta name="color-scheme" content="dark">
+<title>Devyani Deshmukh | EV Strategy, Planning & Analytics</title>
+<meta name="description" content="Devyani Deshmukh: strategy, planning and analytics for EV charging and battery-swapping networks in India.">
+<meta property="og:title" content="Devyani Deshmukh | EV Strategy, Planning & Analytics">
+<meta property="og:description" content="Strategy, planning and analytics for EV charging and battery-swapping networks in India.">
+<meta property="og:image" content="https://suyogkulkarni0.github.io/Devyani-Portfolio/img/og.jpg">`n<meta property="og:url" content="https://suyogkulkarni0.github.io/Devyani-Portfolio/">`n<meta name="twitter:card" content="summary_large_image">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2307090d'/%3E%3Cpath d='M36 8 18 36h12l-3 20 19-30H34z' fill='%234be3b0'/%3E%3C/svg%3E">
+<link rel="preload" as="image" href="img/hero-mobile.jpg" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-desktop.jpg" media="(min-width:761px)" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#07090d;--bg2:#0a0e14;--surface:rgba(255,255,255,.03);--surface2:rgba(255,255,255,.06);
+  --line:rgba(255,255,255,.08);--line2:rgba(255,255,255,.17);
+  --text:#f2f4f6;--soft:#b8c1cc;--muted:#8591a0;
+  --accent:#4be3b0;--gold:#d9bb82;--onacc:#04120d;--warn:#f0b35a;--bad:#f07a86;
+  --serif:"Instrument Serif",Georgia,serif;--sans:Manrope,system-ui,-apple-system,sans-serif;
+  --r:20px;--maxw:1160px;--gut:clamp(20px,5vw,32px);--hdr:72px;
+  --sa-b:env(safe-area-inset-bottom,0px);--sa-t:env(safe-area-inset-top,0px);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{background:var(--bg);scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased;font-size:16px;text-rendering:optimizeLegibility}
+body.menu{overflow:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+button{font:inherit;color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gut);position:relative}
+.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+em.it{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--accent);letter-spacing:-.01em}
+#prog{position:fixed;top:0;left:0;height:2px;width:0;z-index:100;background:linear-gradient(90deg,var(--accent),var(--gold))}
+#spot{position:fixed;width:640px;height:640px;border-radius:50%;pointer-events:none;z-index:0;background:radial-gradient(circle,rgba(75,227,176,.05),transparent 65%);transform:translate(-50%,-50%);left:-999px;top:-999px}
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:70;transition:background .3s,border-color .3s;padding-top:var(--sa-t);border-bottom:1px solid transparent}
+header.s,body.menu header{background:rgba(7,9,13,.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom-color:var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:var(--hdr)}
+.logo{display:flex;align-items:center;gap:12px;font:600 15px var(--sans);min-height:44px}
+.logo i{width:38px;height:38px;border-radius:50%;border:1px solid var(--line2);display:grid;place-items:center;font:italic 400 19px var(--serif);color:var(--accent);background:rgba(7,9,13,.5)}
+.links{display:flex;gap:2px;list-style:none}
+.links a{font-size:13.5px;font-weight:500;padding:10px 14px;color:var(--soft);transition:.2s;display:block;position:relative}
+.links a:hover,.links a.on{color:var(--text)}
+.links a.on:after{content:"";position:absolute;left:14px;right:14px;bottom:4px;height:1px;background:var(--accent)}
+.btn{display:inline-flex;gap:10px;align-items:center;justify-content:center;padding:0 28px;min-height:52px;border-radius:40px;font:600 14.5px var(--sans);border:1px solid var(--line2);cursor:pointer;transition:.25s;background:none;color:var(--text);line-height:1}
+.btn .i{font-size:17px;transition:.25s}
+.btn.p{background:var(--accent);border-color:var(--accent);color:var(--onacc)}
+.btn.p:hover{background:#7aedc7;transform:translateY(-2px);box-shadow:0 12px 36px rgba(75,227,176,.28)}
+.btn.p:hover .i{transform:translate(2px,-2px)}
+.btn.g{background:rgba(7,9,13,.35);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.btn.g:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+.btn:active{transform:scale(.98)}
+.burger{display:none;width:48px;height:48px;border-radius:50%;border:1px solid var(--line2);background:rgba(7,9,13,.5);cursor:pointer;position:relative}
+.burger span{position:absolute;left:15px;right:15px;height:1.5px;background:var(--text);transition:.3s}
+.burger span:nth-child(1){top:19px}.burger span:nth-child(2){top:27px}
+body.menu .burger span:nth-child(1){top:23px;transform:rotate(45deg)}
+body.menu .burger span:nth-child(2){top:23px;transform:rotate(-45deg)}
+/* HERO */
+.hero{position:relative;min-height:min(100svh,920px);display:flex;align-items:center;padding:130px 0 210px;overflow:hidden;background:var(--bg)}
+.hero-bg{display:block;position:absolute;inset:0;overflow:hidden;will-change:transform}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:78% 18%;filter:brightness(.82) contrast(1.06) saturate(.92);transform-origin:72% 30%;animation:kb 24s ease-in-out infinite alternate}
+@keyframes kb{to{transform:scale(1.08)}}
+#road{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;mix-blend-mode:screen;-webkit-mask-image:linear-gradient(90deg,#000 50%,transparent 90%);mask-image:linear-gradient(90deg,#000 50%,transparent 90%)}
+.hero-copy>*{opacity:0;transform:translateY(20px);animation:up .9s cubic-bezier(.2,.7,.2,1) forwards}
+.hero-copy>*:nth-child(1){animation-delay:.1s}.hero-copy>*:nth-child(2){animation-delay:.2s}.hero-copy>*:nth-child(3){animation-delay:.32s}.hero-copy>*:nth-child(4){animation-delay:.46s}.hero-copy>*:nth-child(5){animation-delay:.6s}
+@keyframes up{to{opacity:1;transform:none}}
+.hchip{position:absolute;z-index:3;display:flex;gap:12px;align-items:center;padding:10px 18px 10px 10px;border-radius:16px;background:rgba(10,15,21,.72);border:1px solid var(--line2);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);font-size:13px;font-weight:600;line-height:1.3;box-shadow:0 20px 44px rgba(0,0,0,.45);animation:fl 7s ease-in-out infinite}
+.hchip i{width:34px;height:34px;border-radius:10px;background:rgba(75,227,176,.12);border:1px solid rgba(75,227,176,.3);color:var(--accent);display:grid;place-items:center;font-size:17px}
+.hchip small{display:block;color:var(--muted);font-size:11.5px;font-weight:500}
+@keyframes fl{50%{transform:translateY(-9px)}}
+.hc1{right:4%;bottom:250px}.hc2{right:24%;bottom:196px;animation-delay:-3.5s}
+.hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,rgba(7,9,13,.94) 28%,rgba(7,9,13,.6) 50%,rgba(7,9,13,.08) 78%),linear-gradient(0deg,var(--bg) 0%,transparent 34%),linear-gradient(180deg,rgba(7,9,13,.65),transparent 22%)}
+.hero-in{z-index:2;width:100%}
+.hero-copy{max-width:600px}
+.tagline{display:inline-flex;gap:10px;align-items:center;padding:9px 16px;border-radius:30px;background:rgba(7,9,13,.55);border:1px solid var(--line2);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font-size:12.5px;font-weight:600;color:var(--soft);margin-bottom:26px;max-width:100%}
+.tagline b{flex:none;width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pu 2.2s infinite}
+@keyframes pu{0%{box-shadow:0 0 0 0 rgba(75,227,176,.6)}70%{box-shadow:0 0 0 9px transparent}}
+.hello{font-size:13px;color:var(--muted);letter-spacing:.16em;text-transform:uppercase;font-weight:700;margin-bottom:16px}
+.hello span{color:var(--text)}
+.hero h1{font:400 clamp(44px,5.6vw,82px)/1.03 var(--serif);letter-spacing:-.025em}
+.lead{font-size:17.5px;color:var(--soft);max-width:520px;margin:26px 0 36px;line-height:1.75}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.herobar{position:absolute;left:0;right:0;bottom:48px;z-index:3}
+.hb{display:grid;grid-template-columns:repeat(4,1fr);background:rgba(10,15,21,.7);border:1px solid var(--line2);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:var(--r)}
+.hb div{padding:20px 26px;border-right:1px solid var(--line)}
+.hb div:last-child{border:0}
+.hb small{display:block;color:var(--muted);font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;margin-bottom:2px}
+.hb b{font:600 15px var(--sans)}
+/* marquee */
+.marq{border-bottom:1px solid var(--line);overflow:hidden;padding:20px 0;position:relative;z-index:2}
+.tk{display:flex;width:max-content;animation:mq 55s linear infinite}
+.tk span{font:italic 400 24px var(--serif);color:var(--soft);white-space:nowrap;display:flex;align-items:center}
+.tk span:after{content:"";width:5px;height:5px;border-radius:50%;background:var(--accent);margin:0 34px}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* sections */
+section{padding:128px 0;position:relative;z-index:1}
+section.alt{background:var(--bg2);border-block:1px solid var(--line)}
+.head{max-width:720px;margin-bottom:60px}
+.eb{font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:flex;align-items:center;gap:14px}
+.eb:before{content:"";width:28px;height:1px;background:var(--accent)}
+h2{font:400 clamp(34px,4.6vw,60px)/1.07 var(--serif);letter-spacing:-.02em}
+.sub{color:var(--muted);font-size:17px;margin-top:16px;max-width:600px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:32px;position:relative;overflow:hidden;transition:.3s;box-shadow:inset 0 1px 0 rgba(255,255,255,.045)}
+.card:before{content:"";position:absolute;inset:0;background:radial-gradient(360px circle at var(--mx,50%) var(--my,0),rgba(75,227,176,.09),transparent 60%);opacity:0;transition:.3s;pointer-events:none}
+@media(hover:hover){.card:hover{border-color:var(--line2);transform:translateY(-3px)}.card:hover:before{opacity:1}}
+.ico{width:46px;height:46px;border-radius:14px;background:rgba(75,227,176,.08);border:1px solid rgba(75,227,176,.22);color:var(--accent);display:grid;place-items:center;font-size:21px;flex:none}
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:72px;align-items:center}
+.hexwrap{display:grid;place-items:center}
+.hex{width:min(340px,100%);aspect-ratio:1/1.1547;position:relative}
+.hex svg.ring{position:absolute;inset:-2%;width:104%;height:104%;overflow:visible}
+.hex .halo{position:absolute;inset:-12%;border-radius:50%;border:1px dashed rgba(75,227,176,.2);animation:spin 70s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hex .inner{position:absolute;inset:3.5%;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);background:#0d1a1a}
+.hex .inner img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;filter:brightness(.93) contrast(1.04)}
+.about p{color:var(--soft);font-size:17px;margin-bottom:20px}
+.about p b{color:var(--text);font-weight:600}
+.funcs{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.funcs span{font-size:13px;font-weight:500;padding:9px 16px;border-radius:30px;border:1px solid var(--line2);color:var(--soft)}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:64px}
+.fact{padding:26px 28px}
+.fact b{display:block;font:400 56px/1 var(--serif);color:var(--accent);margin-bottom:10px}
+.fact span{color:var(--soft);font-size:14.5px;line-height:1.5;display:block}
+/* swap loop */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.step{display:flex;flex-direction:column;padding:30px 28px}
+.step .no{font:italic 400 44px/1 var(--serif);color:rgba(255,255,255,.2);margin-bottom:26px;display:flex;justify-content:space-between;align-items:flex-start}
+.step h3{font:400 26px/1.15 var(--serif);margin-bottom:12px}
+.step p{font-size:14.5px;color:var(--muted);margin-bottom:22px}
+.step .me{margin-top:auto;font-size:12.5px;font-weight:600;color:var(--accent);padding-top:18px;border-top:1px solid var(--line);display:flex;gap:8px;align-items:center}
+.step .me:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none}
+/* experience */
+.job{padding:0}
+.job-h{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:flex-start;padding:44px 48px 0}
+.job-h h3{font:400 38px/1.1 var(--serif);margin-bottom:10px}
+.job-h p{color:var(--muted);font-size:15px}
+.date{font-size:12.5px;font-weight:700;letter-spacing:.06em;padding:9px 18px;border-radius:30px;border:1px solid rgba(75,227,176,.4);color:var(--accent);background:rgba(75,227,176,.07);display:inline-flex;gap:10px;align-items:center;white-space:nowrap}
+.date:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.intro{color:var(--soft);max-width:880px;padding:26px 48px 44px;font-size:16.5px}
+.rcols{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.rbox{padding:40px 48px}.rbox+.rbox{border-left:1px solid var(--line)}
+.rbox h4{font:400 26px/1.2 var(--serif);margin-bottom:24px;display:flex;gap:14px;align-items:center}
+.rbox h4 .ico{width:40px;height:40px;border-radius:12px;font-size:19px}
+.rbox ul{list-style:none}
+.rbox li{position:relative;padding-left:22px;margin-bottom:16px;font-size:15px;color:var(--soft);line-height:1.65}
+.rbox li:last-child{margin-bottom:0}
+.rbox li:before{content:"";position:absolute;left:0;top:11px;width:8px;height:1px;background:var(--accent)}
+.rbox li b{color:var(--text);font-weight:600}
+/* network */
+.net{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:center}
+.net .head{margin-bottom:34px}
+.map{padding:18px}
+.map svg{width:100%;height:auto;display:block;border-radius:12px}
+.flowline{stroke-dasharray:5 9;animation:dash 1.6s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-28}}
+.node{animation:np 3.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes np{50%{transform:scale(1.35)}}
+.legend{display:flex;gap:10px 22px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);padding:16px 6px 4px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px;vertical-align:-1px}
+.cap{font-size:12.5px;color:var(--muted);margin-top:14px;text-align:center}
+.nl{display:grid;gap:14px}
+.nl .card{display:flex;gap:20px;padding:24px 26px;align-items:flex-start}
+.nl h3{font:600 16px var(--sans);margin-bottom:4px}.nl p{font-size:14.5px;color:var(--muted);line-height:1.6}
+/* projects */
+.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:20px}
+.pr{display:flex;flex-direction:column;grid-column:span 3;padding:34px}
+.pr.w,.pr.n{grid-column:span 3}
+.pr .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
+.pr .k{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);display:flex;gap:10px;align-items:center}
+.pr .k .i{font-size:16px}
+.pr .no{font:italic 400 22px var(--serif);color:rgba(255,255,255,.28)}
+.pr h3{font:400 30px/1.12 var(--serif);margin-bottom:20px;letter-spacing:-.015em}
+.pr ul{list-style:none;margin-bottom:26px}
+.pr li{padding-left:22px;position:relative;font-size:14.5px;color:var(--soft);margin-bottom:10px;line-height:1.65}
+.pr li:before{content:"";position:absolute;left:0;top:11px;width:8px;height:1px;background:var(--accent)}
+.pr li b{color:var(--text);font-weight:600}
+.viz{background:rgba(0,0,0,.3);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:24px}
+.fresh{height:6px;border-radius:6px;background:linear-gradient(90deg,var(--accent) 0 45%,var(--warn) 45% 72%,var(--bad) 72%)}
+.fresh+div{display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted);margin-top:10px}
+.st{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.st span{font-size:12px;font-weight:600;padding:5px 12px;border-radius:20px;border:1px solid}
+.s1{color:var(--accent);border-color:rgba(75,227,176,.35)}.s2{color:var(--warn);border-color:rgba(240,179,90,.35)}.s3{color:var(--bad);border-color:rgba(240,122,134,.35)}
+.fl{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:12.5px;font-weight:500}
+.fl span{padding:7px 12px;border-radius:10px;border:1px solid var(--line2);color:var(--soft)}
+.fl .i{color:var(--accent);font-size:15px}
+.ents{display:flex;gap:8px;flex-wrap:wrap}
+.ents span{font-size:12.5px;font-weight:500;padding:6px 13px;border-radius:30px;border:1px solid var(--line2);color:var(--soft)}
+.stack{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+.stack span{font-size:12px;font-weight:600;padding:5px 12px;border-radius:30px;background:var(--surface2);color:var(--soft)}
+/* skills */
+.sg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.sg .card{padding:30px}
+.sg .t{display:flex;gap:14px;align-items:center;margin-bottom:6px}
+.sg h3{font:400 24px var(--serif)}
+.sg .s{font-size:13.5px;color:var(--muted);margin:0 0 22px 60px}
+.sg .wide{grid-column:span 3}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chips span{font-size:12.5px;font-weight:500;padding:8px 14px;border-radius:30px;background:var(--surface);border:1px solid var(--line);color:var(--soft)}
+/* education */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:72px}
+.two h3{font:400 30px var(--serif);margin-bottom:30px}
+.tl{border-left:1px solid var(--line2);margin-left:5px}
+.tl div{position:relative;padding:0 0 30px 30px}
+.tl div:last-child{padding-bottom:0}
+.tl div:before{content:"";position:absolute;left:-5px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--bg);border:1px solid var(--accent)}
+.tl em{font-style:normal;font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.12em}
+.tl b{display:block;font:400 22px/1.25 var(--serif);margin:4px 0}
+.tl span{font-size:14.5px;color:var(--muted)}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:72px}
+.duo .card{display:flex;gap:20px;align-items:flex-start}
+.duo h3{font:400 24px var(--serif);margin-bottom:6px}.duo p{font-size:14.5px;color:var(--muted)}
+/* contact */
+.cbox{border-radius:28px;padding:84px 48px 96px;text-align:center;position:relative;overflow:hidden;border:1px solid var(--line2);background:radial-gradient(700px 320px at 50% 0,rgba(75,227,176,.13),transparent 70%),var(--bg2)}
+.avatar{width:92px;height:92px;border-radius:50%;object-fit:cover;margin:0 auto 26px;border:1px solid rgba(75,227,176,.5);box-shadow:0 0 0 6px rgba(75,227,176,.1)}
+.cbox .eb{justify-content:center}.cbox .eb:after{content:"";width:28px;height:1px;background:var(--accent)}
+.cbox h2{margin-bottom:18px}
+.cbox .sub{margin:0 auto 38px;text-align:center}
+.cbox .cta{justify-content:center}
+.cl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:60px;text-align:left}
+.cl a{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 20px;font-size:14px;font-weight:500;word-break:break-word;transition:.25s;display:block;min-height:64px}
+.cl a:active,.cl a:hover{border-color:var(--accent)}
+.cl small{display:block;font-size:11px;color:var(--accent);font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:6px}
+footer{padding:32px 0;font-size:13.5px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.toast{position:fixed;bottom:calc(24px + var(--sa-b));left:50%;transform:translate(-50%,120px);background:var(--bg2);border:1px solid var(--accent);padding:12px 24px;border-radius:30px;font-size:14px;transition:.35s;z-index:120}
+.toast.show{transform:translate(-50%,0)}
+/* mobile action bar */
+.dock{display:none}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
+
+/* ===== tablet ===== */
+@media(max-width:1060px){
+ :root{--hdr:68px}
+ section{padding:96px 0}
+ .about,.rcols,.net,.two{grid-template-columns:minmax(0,1fr)}
+ .about,.net,.two{gap:48px}
+ .net>.rv:first-child{order:2}
+ .about{justify-items:center}.about>div:last-child{justify-self:stretch}
+ .facts{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:48px}
+ .rbox+.rbox{border-left:0;border-top:1px solid var(--line)}
+ .bento{grid-template-columns:minmax(0,1fr)}.pr,.pr.w,.pr.n{grid-column:auto}
+ .sg{grid-template-columns:minmax(0,1fr)}.sg .wide{grid-column:auto}.duo{grid-template-columns:1fr}.cl{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .hb{grid-template-columns:1fr 1fr}.hb div:nth-child(2){border-right:0}.hb div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+ .hchip{display:none}
+ .burger{display:block}.nav-btn{display:none}
+ .links{position:fixed;inset:0;flex-direction:column;justify-content:center;gap:4px;padding:calc(var(--hdr) + var(--sa-t)) var(--gut) calc(40px + var(--sa-b));background:rgba(7,9,13,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);opacity:0;visibility:hidden;transition:.3s;z-index:-1}
+ body.menu .links{opacity:1;visibility:visible}
+ .links a{font:400 clamp(34px,9vw,52px)/1.2 var(--serif);padding:8px 0;color:var(--soft)}
+ .links a.on{color:var(--accent)}.links a.on:after{display:none}
+}
+/* ===== phone ===== */
+@media(max-width:760px){
+ :root{--hdr:64px;--r:18px}
+ body{font-size:16px;padding-bottom:calc(76px + var(--sa-b))}
+ section{padding:72px 0}
+ .head{margin-bottom:36px}
+ .sub{font-size:16px}
+ /* hero: full-screen photo, copy anchored at bottom, CTAs inside the first screen */
+ .hero{display:block;min-height:0;padding:0;overflow:hidden}
+ .hero-bg{inset:0 0 auto 0;height:100vh;height:100svh}
+ .hero-bg img{object-position:50% 6%;filter:brightness(.92) contrast(1.05) saturate(.95)}
+ .hero-bg:after{background:linear-gradient(0deg,var(--bg) 0%,rgba(7,9,13,.93) 30%,rgba(7,9,13,.5) 47%,transparent 62%),linear-gradient(180deg,rgba(7,9,13,.72),transparent 20%)}
+ #road{bottom:auto;height:100vh;height:100svh;-webkit-mask-image:linear-gradient(180deg,transparent 40%,#000 72%);mask-image:linear-gradient(180deg,transparent 46%,#000 80%);opacity:.5}
+ .hero-in{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding-top:calc(var(--hdr) + 12px);padding-bottom:22px}
+ .tagline{display:none}
+ .hello{font-size:11.5px;margin-bottom:10px}
+ .hero h1{font-size:clamp(40px,11.4vw,54px);line-height:1.04}
+ .lead{font-size:15.5px;margin:16px 0 22px;line-height:1.65}
+ .hero .cta{flex-direction:row;gap:10px;flex-wrap:nowrap}
+ .hero .cta .btn{flex:1;padding:0 10px;min-height:52px;font-size:14px;white-space:nowrap}
+ .herobar{position:relative;bottom:auto;margin-top:4px;padding-bottom:26px}
+ .hb{grid-template-columns:1fr 1fr;border-radius:var(--r)}
+ .hb div{padding:16px 18px}.hb b{font-size:14px;line-height:1.35;display:block}
+ .marq{padding:16px 0}.tk span{font-size:20px}
+ /* about */
+ .hex{width:min(260px,70vw)}
+ .facts{grid-template-columns:1fr 1fr;gap:12px}
+ .fact{padding:20px 18px}.fact b{font-size:44px}.fact span{font-size:13.5px}
+ .card{padding:24px}.card.job{padding:0}
+ .about p{font-size:16.5px}
+ /* steps as swipe carousel */
+ .steps{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 calc(var(--gut) * -1);padding:4px var(--gut) 14px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+ .steps::-webkit-scrollbar{display:none}
+ .step{flex:0 0 78%;scroll-snap-align:center;padding:26px 22px}
+ .step .no{margin-bottom:20px}
+ .step .me{white-space:normal}
+ /* experience */
+ .job-h{padding:28px 24px 0}.job-h h3{font-size:30px}
+ .intro{padding:20px 24px 28px;font-size:16px}
+ .rbox{padding:28px 24px}.rbox h4{font-size:23px}
+ .rbox li{font-size:15px}
+ .map{padding:12px}
+ .nl .card{padding:20px;gap:16px}
+ /* projects */
+ .pr{padding:24px}.pr h3,.pr.n h3{font-size:25px;margin-bottom:16px}
+ .viz{padding:16px}
+ .pr .top{margin-bottom:18px}
+ /* skills */
+ .sg .card{padding:24px}.sg h3{font-size:22px}.sg .s{margin-left:0;margin-top:10px}
+ .chips span{padding:8px 13px;font-size:12.5px}
+ /* edu */
+ .two{gap:44px}.two h3{font-size:26px;margin-bottom:24px}.tl b{font-size:20px}
+ .duo{margin-top:44px}.duo .card{gap:16px}
+ /* contact */
+ .cbox{padding:48px 22px 52px;border-radius:24px}
+ .avatar{width:80px;height:80px}
+ .cbox .cta{flex-direction:column;gap:12px}.cbox .cta .btn{width:100%}
+ .cl{grid-template-columns:1fr;margin-top:40px}
+ footer .wrap{flex-direction:column;gap:4px}
+ /* bottom action dock */
+ .dock{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;position:fixed;left:12px;right:12px;bottom:calc(10px + var(--sa-b));z-index:65;padding:8px;border-radius:24px;background:rgba(10,15,21,.88);border:1px solid var(--line2);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);transform:translateY(130%);transition:transform .4s cubic-bezier(.2,.7,.2,1);box-shadow:0 18px 40px rgba(0,0,0,.5)}
+ .dock.show{transform:none}
+ body.menu .dock{transform:translateY(130%)}
+ .dock a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:16px;font-size:11.5px;font-weight:600;color:var(--soft)}
+ .dock a .i{font-size:20px}
+ .dock a.p{background:var(--accent);color:var(--onacc)}
+ .dock a:active{transform:scale(.96)}
+}
+@media(max-width:380px){.hb{grid-template-columns:1fr}.hb div{border-right:0!important;border-bottom:1px solid var(--line)}.hb div:last-child{border:0}.facts{grid-template-columns:1fr}.step{flex-basis:86%}}
+@media(hover:none){#spot{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.hero-copy>*{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="zap" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+<symbol id="bat" viewBox="0 0 24 24"><path d="M15 7h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2"/><path d="M6 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h1"/><path d="m11 7-3 5h4l-3 5"/><line x1="22" x2="22" y1="11" y2="13"/></symbol>
+<symbol id="chart" viewBox="0 0 24 24"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></symbol>
+<symbol id="compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></symbol>
+<symbol id="plug" viewBox="0 0 24 24"><path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></symbol>
+<symbol id="truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+<symbol id="swap" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+<symbol id="route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+<symbol id="trend" viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></symbol>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+<symbol id="act" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+<symbol id="bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol>
+<symbol id="layers" viewBox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+<symbol id="code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+<symbol id="leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+<symbol id="award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+<symbol id="mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+<symbol id="phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="link" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+</defs></svg>
+<div id="prog"></div><div id="spot"></div>
+
+<header id="hd"><div class="wrap"><nav>
+  <a href="#home" class="logo"><i>D</i> Devyani Deshmukh</a>
+  <ul class="links" id="links">
+    <li><a href="#about">About</a></li><li><a href="#swap">Operations</a></li><li><a href="#experience">Experience</a></li>
+    <li><a href="#network">Strategy</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li>
+  </ul>
+  <div style="display:flex;gap:10px;align-items:center"><a class="btn p nav-btn" href="#contact" style="padding:0 22px;min-height:44px;font-size:13.5px">Get in touch <svg class="i"><use href="#arrow"/></svg></a><button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="links"><span></span><span></span></button></div>
+</nav></div></header>
+
+<main>
+<section class="hero" id="home">
+  <picture class="hero-bg">
+    <source media="(max-width:760px)" srcset="img/hero-mobile.jpg" width="753" height="941">
+    <img src="img/hero-desktop.jpg" width="1672" height="941" alt="Devyani Deshmukh seated at a desk in a bright office" fetchpriority="high" decoding="async">
+  </picture>
+  <canvas id="road" aria-hidden="true"></canvas>
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <div class="tagline"><b></b> Strategy, Planning &amp; Analytics · Energy in Motion</div>
+      <div class="hello">Hi, I'm <span>Devyani Deshmukh</span></div>
+      <h1>Powering India's shift from <em class="it">diesel to electric.</em></h1>
+      <p class="lead">I plan and scale EV charging and battery-swapping networks, keep stations safe and available, and turn operational data into decisions, so fleets can go electric with confidence.</p>
+      <div class="cta"><a class="btn p" href="#experience">Explore my work <svg class="i"><use href="#arrow"/></svg></a><a class="btn g" href="mailto:ddevyani283@gmail.com">Let's talk</a></div>
+    </div>
+  </div>
+  <div class="hchip hc1"><i><svg class="i"><use href="#zap"/></svg></i><div>EV Strategy<small>Network planning</small></div></div>
+  <div class="hchip hc2"><i><svg class="i"><use href="#bat"/></svg></i><div>Battery Swapping<small>Station operations</small></div></div>
+  <div class="herobar"><div class="wrap"><div class="hb">
+    <div><small>Currently</small><b>Energy in Motion</b></div>
+    <div><small>Role</small><b>Strategy, Planning &amp; Analytics</b></div>
+    <div><small>Based in</small><b>Pune, India</b></div>
+    <div><small>Open to</small><b>Systems · Strategy · Ops</b></div>
+  </div></div></div>
+</section>
+
+<div class="marq" aria-hidden="true"><div class="tk" id="tk"></div></div>
+
+<section id="about"><div class="wrap">
+  <div class="head rv"><div class="eb">About me</div>
+  <h2>Where <em class="it">technology, business</em> and energy meet</h2></div>
+  <div class="about rv">
+    <div class="hexwrap"><div class="hex">
+      <div class="halo"></div>
+      <svg class="ring" viewBox="0 0 100 115.47" fill="none" aria-hidden="true">
+        <defs><filter id="gl" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.4"/></filter></defs>
+        <polygon points="50,1.5 98.5,29.5 98.5,86 50,114 1.5,86 1.5,29.5" stroke="#4be3b0" stroke-width="2.4" stroke-linejoin="round" filter="url(#gl)" opacity=".35"/>
+        <polygon points="50,1.5 98.5,29.5 98.5,86 50,114 1.5,86 1.5,29.5" stroke="#4be3b0" stroke-width=".7" stroke-linejoin="round"/>
+      </svg>
+      <div class="inner"><img src="img/portrait.jpg" width="700" height="808" alt="Portrait of Devyani Deshmukh" loading="lazy" decoding="async"></div>
+    </div></div>
+    <div>
+      <p>At <b>Energy in Motion</b> I drive strategy, analytics and technology-led initiatives for the expansion of an <b>EV charging and battery-swapping network across India</b>, helping fleets move from diesel to electric logistics.</p>
+      <p>I combine a strong technical foundation (SQL, Python, dashboards, telemetry and system integration) with business drive, stakeholder management and clear communication to make data-driven decisions in cross-functional roles.</p>
+      <p>I'm a generalist who has worked across product, sales, customer success, operations, compliance, legal and investor relations, and on whatever problem is blocking the team.</p>
+      <p>I'm keen to bring this blend to high-impact roles in <b>systems engineering, strategy and operations</b>: electrification and battery-swapping initiatives, equipment telematics, fleet-performance analytics, and data-driven operations across sales, service and manufacturing.</p>
+      <div class="funcs"><span>Product</span><span>Sales</span><span>Customer Success</span><span>Operations</span><span>Compliance</span><span>Legal</span><span>Investor Relations</span></div>
+    </div>
+  </div>
+  <div class="facts rv">
+    <div class="card fact"><b data-n="7">0</b><span>business functions worked across</span></div>
+    <div class="card fact"><b data-n="4">0</b><span>monitoring &amp; platform projects built</span></div>
+    <div class="card fact"><b data-n="9">0</b><span>core competencies, from KPIs to SOPs</span></div>
+    <div class="card fact"><b data-n="3">0</b><span>certifications, incl. Oracle Cloud 2025</span></div>
+  </div>
+</div></section>
+
+<section class="alt" id="swap"><div class="wrap">
+  <div class="head rv"><div class="eb">On the ground</div>
+  <h2>Keeping every <em class="it">swap</em> smooth</h2>
+  <p class="sub">A battery swap is a quick, repeatable loop. Here's where I come in at each step of the station experience.</p></div>
+  <div class="steps">
+    <div class="card step rv"><div class="no">01<span class="ico"><svg class="i"><use href="#truck"/></svg></span></div><h3>Truck arrives</h3><p>Fleets roll in on schedule and need availability they can count on.</p><span class="me">I track availability &amp; throughput</span></div>
+    <div class="card step rv"><div class="no">02<span class="ico"><svg class="i"><use href="#swap"/></svg></span></div><h3>Battery swap</h3><p>Depleted pack out, charged pack in, safely and quickly.</p><span class="me">I enforce safety, quality &amp; SOPs</span></div>
+    <div class="card step rv"><div class="no">03<span class="ico"><svg class="i"><use href="#plug"/></svg></span></div><h3>Charge &amp; monitor</h3><p>Chargers, power draw and DG sets keep charged packs ready.</p><span class="me">I monitor power &amp; DG sets</span></div>
+    <div class="card step rv"><div class="no">04<span class="ico"><svg class="i"><use href="#route"/></svg></span></div><h3>Back on the road</h3><p>Faults get diagnosed and closed so downtime stays minimal.</p><span class="me">I coordinate fault closure</span></div>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <div class="head rv"><div class="eb">Experience</div>
+  <h2>Strategy meets <em class="it">operations</em></h2></div>
+  <div class="card job rv">
+    <div class="job-h"><div><h3>Strategy, Planning &amp; Analytics</h3><p>Energy in Motion · EV charging &amp; battery-swapping infrastructure · Mumbai, India</p></div><span class="date">FEB 2026 – PRESENT</span></div>
+    <p class="intro">Responsible for network planning, business analysis, performance optimisation, technology enablement and infrastructure scalability, improving fleet productivity, battery-swapping station efficiency, customer experience and operational excellence.</p>
+    <div class="rcols">
+      <div class="rbox"><h4><span class="ico"><svg class="i"><use href="#bat"/></svg></span> Station Operations &amp; Equipment</h4><ul>
+        <li>Monitor EV charger and battery-swapping station performance, tracking <b>availability, faults and throughput</b> across sites.</li>
+        <li>Ensure <b>safety, quality and SOP compliance</b> through regular checks and adherence to operating procedures.</li>
+        <li>Track power consumption, <b>DG operations</b> and daily station reports to monitor energy usage and site health.</li>
+        <li>Coordinate with maintenance teams on fault diagnosis and resolution through to closure.</li>
+        <li>Improve operational efficiency and minimise downtime through faster fault response and preventive follow-ups.</li></ul></div>
+      <div class="rbox"><h4><span class="ico"><svg class="i"><use href="#compass"/></svg></span> Strategy, Analysis &amp; Technology</h4><ul>
+        <li><b>Network planning &amp; business analysis:</b> analyse demand, utilisation and site performance to guide where and how to scale.</li>
+        <li><b>Data-driven problem solving:</b> find trends in operational and telemetry data to keep running projects profitable.</li>
+        <li><b>Performance governance:</b> structured reporting to leadership on challenges and solutions.</li>
+        <li><b>Process automation:</b> remove manual workflows and system inefficiencies for smooth EV projects.</li>
+        <li><b>Technology enablement:</b> internal dashboards and an asset down-alerting system with SSO and role-based access.</li>
+        <li><b>Charger strategy:</b> vendor management and CPO network integration.</li>
+        <li><b>Cross-functional &amp; customers:</b> lead projects with Sales, IT, Product and Plant teams; drive on-ground customer engagement.</li></ul></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="alt" id="network"><div class="wrap net">
+  <div class="rv">
+    <div class="card map">
+      <svg viewBox="0 0 500 360" aria-label="Illustrative charging and swapping network">
+        <defs><radialGradient id="g1"><stop offset="0" stop-color="#4be3b0" stop-opacity=".3"/><stop offset="1" stop-color="#4be3b0" stop-opacity="0"/></radialGradient></defs>
+        <rect width="500" height="360" fill="#060a0f"/>
+        <g stroke="rgba(255,255,255,.04)" stroke-width="1"><path d="M0 60H500M0 120H500M0 180H500M0 240H500M0 300H500M80 0V360M160 0V360M240 0V360M320 0V360M400 0V360"/></g>
+        <circle cx="190" cy="170" r="78" fill="url(#g1)"/><circle cx="300" cy="200" r="78" fill="url(#g1)"/>
+        <g stroke="#4be3b0" stroke-opacity=".5" stroke-width="1.8" fill="none">
+          <path class="flowline" d="M90 250 L190 170 L300 200 L400 110"/><path class="flowline" d="M190 170 L170 80 L290 70"/><path class="flowline" d="M300 200 L380 280"/><path class="flowline" d="M90 250 L180 300 L300 200"/>
+        </g>
+        <g fill="#4be3b0"><circle cx="190" cy="170" r="14"/><circle cx="300" cy="200" r="14"/></g>
+        <g fill="none" stroke="#04120d" stroke-width="2" stroke-linejoin="round"><polygon points="192,163 185,172 190,172 188,178 195,169 190,169"/><polygon points="302,193 295,202 300,202 298,208 305,199 300,199"/></g>
+        <g fill="#f2f4f6"><circle cx="90" cy="250" r="7"/><circle cx="400" cy="110" r="7"/><circle cx="290" cy="70" r="7"/></g>
+        <g fill="#060a0f" stroke="#4be3b0" stroke-width="2"><circle class="node" cx="170" cy="80" r="7"/><circle class="node" cx="380" cy="280" r="7" style="animation-delay:-1s"/><circle class="node" cx="180" cy="300" r="7" style="animation-delay:-2s"/></g>
+      </svg>
+      <div class="legend"><span><i style="background:#4be3b0"></i>Charging hub</span><span><i style="background:#f2f4f6"></i>Swap station</span><span><i style="background:#060a0f;border:2px solid #4be3b0"></i>Planned site</span></div>
+    </div>
+    <p class="cap">Illustrative network diagram, not actual site locations.</p>
+  </div>
+  <div class="rv">
+    <div class="head"><div class="eb">Strategy</div>
+    <h2>Deciding <em class="it">where and how</em> to scale</h2>
+    <p class="sub">Good networks are planned with data. I connect demand, utilisation and site performance to expansion decisions.</p></div>
+    <div class="nl">
+      <div class="card"><span class="ico"><svg class="i"><use href="#pin"/></svg></span><div><h3>Network planning &amp; business analysis</h3><p>Analyse demand, utilisation and site performance to guide expansion across India.</p></div></div>
+      <div class="card"><span class="ico"><svg class="i"><use href="#users"/></svg></span><div><h3>Charger strategy &amp; CPO integration</h3><p>Vendor management and charge point operator network integration for end-to-end e-mobility.</p></div></div>
+      <div class="card"><span class="ico"><svg class="i"><use href="#trend"/></svg></span><div><h3>KPI reporting &amp; governance</h3><p>Structured reporting to leadership on station and product performance.</p></div></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <div class="head rv"><div class="eb">Projects</div>
+  <h2>Technology that keeps the <em class="it">network running</em></h2>
+  <p class="sub">Internal tools I built or co-built so teams can see fleet and charging infrastructure health in real time.</p></div>
+  <div class="bento">
+    <article class="card pr w rv"><div class="top"><span class="k"><svg class="i"><use href="#act"/></svg>Uptime monitoring</span><span class="no">01</span></div>
+      <h3>Fleet &amp; Charging-Infrastructure Uptime Dashboard</h3>
+      <div class="viz"><div class="st"><span class="s1">Operational</span><span class="s2">Degraded</span><span class="s3">Down</span></div><div class="fresh"></div><div><span>fresh signal</span><span>stale signal</span></div></div>
+      <ul><li>Monitors trucks, chargers and swap stations, classifying each by the <b>freshness of its latest telemetry signal</b>.</li><li>Backend poller reads live platform data on a fixed cadence within rate limits, with timezone-safe logic and user-scoped access.</li></ul>
+      <div class="stack"><span>React.js</span><span>TypeScript</span><span>Node.js</span><span>GraphQL</span><span>Zitadel OIDC</span><span>Docker</span></div></article>
+
+    <article class="card pr n rv"><div class="top"><span class="k"><svg class="i"><use href="#bell"/></svg>Automation</span><span class="no">02</span></div>
+      <h3>Targeted Asset Down-Alerting</h3>
+      <div class="viz"><div class="fl"><span>State change</span><svg class="i"><use href="#arrow"/></svg><span>Subscriber</span><svg class="i"><use href="#arrow"/></svg><span>Email</span></div></div>
+      <ul><li>Emails the specific subscribed person when an asset goes down, recovers or stays down: <b>one alert per state change, never per poll</b>.</li><li>Admin page maps people to assets across hundreds of assets.</li></ul>
+      <div class="stack"><span>Node.js</span><span>TypeScript</span><span>React.js</span><span>Email</span></div></article>
+
+    <article class="card pr n rv"><div class="top"><span class="k"><svg class="i"><use href="#bat"/></svg>Battery health</span><span class="no">03</span></div>
+      <h3>Battery Monitoring Dashboard</h3>
+      <div class="viz"><div class="fl"><span style="opacity:.5;text-decoration:line-through">Legacy DB</span><svg class="i"><use href="#arrow"/></svg><span style="border-color:rgba(75,227,176,.5);color:var(--accent)">Live gateway + SSO</span></div></div>
+      <ul><li>Rebuilt a legacy database-backed dashboard on a <b>live-gateway architecture</b> with single sign-on.</li><li>Gives teams real-time battery health data.</li></ul>
+      <div class="stack"><span>React.js</span><span>TypeScript</span><span>Node.js</span><span>GraphQL</span><span>Docker</span></div></article>
+
+    <article class="card pr w rv"><div class="top"><span class="k"><svg class="i"><use href="#layers"/></svg>Platform · co-building</span><span class="no">04</span></div>
+      <h3>Multi-Tenant Fleet &amp; Asset Management Platform</h3>
+      <div class="viz"><div class="ents"><span>Firms</span><span>Users</span><span>Roles</span><span>Assets</span><span>Operator fleets</span><span>Personal fleets</span><span>End-user assignments</span></div></div>
+      <ul><li>Documented domain model with <b>enforced data invariants</b>, a shared API response envelope and health / DB-readiness endpoints.</li><li>Express 5 + Drizzle ORM on PostgreSQL, React 19 with RTK Query; Docker Compose with Nginx serving the frontend and proxying the API on a single origin.</li></ul>
+      <div class="stack"><span>React 19</span><span>TypeScript</span><span>Tailwind v4</span><span>Express 5</span><span>PostgreSQL</span><span>Docker</span><span>Nginx</span></div></article>
+  </div>
+</div></section>
+
+<section class="alt" id="skills"><div class="wrap">
+  <div class="head rv"><div class="eb">Skills</div>
+  <h2>Business first, <em class="it">tech</em> to back it up</h2>
+  <p class="sub">Strategy and operations skills lead, supported by a hands-on data and engineering toolkit.</p></div>
+  <div class="sg">
+    <div class="card rv"><div class="t"><span class="ico"><svg class="i"><use href="#compass"/></svg></span><h3>Strategy &amp; Business</h3></div><p class="s">How I plan, govern and deliver</p><div class="chips"><span>KPI Reporting &amp; Insights</span><span>Business &amp; Network Planning</span><span>Process Optimisation &amp; Automation</span><span>Stakeholder &amp; Project Management</span><span>Performance Monitoring &amp; Governance</span><span>Vendor Management &amp; CPO Integration</span><span>Safety, Quality &amp; SOP Compliance</span><span>EV &amp; Battery-Swapping Ecosystem</span></div></div>
+    <div class="card rv"><div class="t"><span class="ico"><svg class="i"><use href="#bat"/></svg></span><h3>EV &amp; Operations</h3></div><p class="s">Equipment and station know-how</p><div class="chips"><span>EV chargers</span><span>Battery-swapping stations</span><span>DG sets</span><span>Energy consumption monitoring</span><span>Station reporting</span><span>Fault &amp; maintenance coordination</span><span>OCPP</span><span>GPS / OBD telemetry</span><span>MQTT</span></div></div>
+    <div class="card rv"><div class="t"><span class="ico"><svg class="i"><use href="#chart"/></svg></span><h3>Data &amp; Analytics</h3></div><p class="s">Turning telemetry into decisions</p><div class="chips"><span>SQL (joins, window functions)</span><span>Python: Pandas, NumPy, Matplotlib</span><span>Advanced Excel</span><span>Power BI</span><span>Data cleaning</span><span>Trend &amp; root-cause analysis</span></div></div>
+    <div class="card wide rv"><div class="t"><span class="ico"><svg class="i"><use href="#code"/></svg></span><h3>Engineering toolkit</h3></div><p class="s">Used to build the dashboards and alerting systems above</p><div class="chips"><span>React.js</span><span>TypeScript</span><span>Node.js / Express 5</span><span>Redux Toolkit (RTK Query)</span><span>Python: Django, Flask</span><span>Java: Spring Boot</span><span>HTML5 / CSS3 / Tailwind v4</span><span>PostgreSQL (Drizzle ORM)</span><span>MySQL</span><span>MongoDB</span><span>REST &amp; GraphQL</span><span>Webhooks</span><span>OIDC / OAuth 2.0 (Zitadel)</span><span>RBAC</span><span>AWS</span><span>Docker &amp; Compose</span><span>Nginx</span><span>Git / GitHub</span><span>Postman &amp; UAT</span><span>JIRA</span><span>MS Office / Google Workspace</span><span>PC assembly &amp; LAN/Wi-Fi</span></div></div>
+  </div>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <div class="head rv"><div class="eb">Background</div>
+  <h2>Education &amp; <em class="it">certifications</em></h2></div>
+  <div class="two rv">
+    <div><h3>Education</h3><div class="tl">
+      <div><em>2022 – 2025</em><b>Bachelor of Computer Applications (BCA)</b><span>Bharati Vidyapeeth University, Pune</span></div>
+      <div><em>2020 – 2022</em><b>Higher Secondary Certificate (HSC)</b><span>Amravati University</span></div>
+      <div><em>2019 – 2020</em><b>Secondary School Certificate (SSC)</b><span>Holy Cross High School Convent, Akola</span></div></div></div>
+    <div><h3>Certifications</h3><div class="tl">
+      <div><em>OCT 2025</em><b>Oracle Cloud Infrastructure 2025 Certified Foundations Associate</b><span>Oracle University</span></div>
+      <div><em>OCT 2024</em><b>SkillUP 101 – Python</b><span>EDUCBA</span></div>
+      <div><em>SEP 2023</em><b>Statistics Essentials for Analytics – Beginners</b><span>EDUCBA</span></div></div></div>
+  </div>
+  <div class="duo rv">
+    <div class="card"><span class="ico"><svg class="i"><use href="#award"/></svg></span><div><h3>Strengths</h3><p>Analytical thinking, techno-commercial mindset, clear communication, sharp observation, ownership and fast learning.</p></div></div>
+    <div class="card"><span class="ico"><svg class="i"><use href="#leaf"/></svg></span><div><h3>Interests</h3><p>Electric vehicles and their evolving ecosystem, energy transition, business strategy, and technology-driven solutions for mobility and energy.</p></div></div>
+  </div>
+</div></section>
+
+<section class="alt" id="contact"><div class="wrap"><div class="cbox rv">
+  <img class="avatar" src="img/avatar.jpg" width="92" height="92" alt="Devyani Deshmukh" loading="lazy" decoding="async">
+  <div class="eb">Contact</div>
+  <h2>Let's electrify <em class="it">what's next</em></h2>
+  <p class="sub">Open to roles in systems engineering, strategy and operations across EV, energy and fleet analytics.</p>
+  <div class="cta"><a class="btn p" href="mailto:ddevyani283@gmail.com">Email me <svg class="i"><use href="#arrow"/></svg></a><button class="btn g" id="copy">Copy email</button></div>
+  <div class="cl">
+    <a href="mailto:ddevyani283@gmail.com"><small>Email</small>ddevyani283@gmail.com</a>
+    <a href="tel:+918669047413"><small>Phone</small>+91-8669047413</a>
+    <a href="https://linkedin.com/in/devops-devyani" target="_blank" rel="noopener"><small>LinkedIn</small>devops-devyani</a>
+    <a href="https://github.com/cloudops-devyani" target="_blank" rel="noopener"><small>GitHub</small>cloudops-devyani</a>
+  </div>
+</div></div></section>
+</main>
+<footer><div class="wrap"><span>© <span id="y"></span> Devyani Deshmukh</span><span>Pune, Maharashtra · Powering the shift to electric</span></div></footer>
+
+<nav class="dock" id="dock" aria-label="Quick contact">
+  <a href="tel:+918669047413"><svg class="i"><use href="#phone"/></svg>Call</a>
+  <a class="p" href="mailto:ddevyani283@gmail.com"><svg class="i"><use href="#mail"/></svg>Email</a>
+  <a href="https://linkedin.com/in/devops-devyani" target="_blank" rel="noopener"><svg class="i"><use href="#link"/></svg>LinkedIn</a>
+</nav>
+<div class="toast" id="toast" role="status">Email copied</div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+$('#y').textContent=new Date().getFullYear();
+
+/* scroll: header, progress, active link, dock */
+const secs=$$('main section[id]'),dock=$('#dock'),hd=$('#hd'),prog=$('#prog'),heroBg=$('.hero-bg');
+let tick=false;
+function onScroll(){
+  const y=scrollY,h=document.documentElement.scrollHeight-innerHeight;
+  prog.style.width=(h>0?y/h*100:0)+'%';hd.classList.toggle('s',y>20);
+  let cur='';secs.forEach(s=>{if(y>=s.offsetTop-220)cur=s.id});
+  $$('#links a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+cur));
+  dock.classList.toggle('show',y>innerHeight*.6);
+  if(y<innerHeight*1.3)heroBg.style.transform='translate3d(0,'+(y*.16)+'px,0)';
+  tick=false;
+}
+addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(onScroll)}},{passive:true});onScroll();
+
+/* mobile menu */
+const burger=$('#burger');
+function menu(open){document.body.classList.toggle('menu',open);burger.setAttribute('aria-expanded',open);burger.setAttribute('aria-label',open?'Close menu':'Open menu')}
+burger.onclick=()=>menu(!document.body.classList.contains('menu'));
+$$('#links a').forEach(a=>a.addEventListener('click',()=>menu(false)));
+addEventListener('keydown',e=>{if(e.key==='Escape')menu(false)});
+addEventListener('resize',()=>{if(innerWidth>1060)menu(false)});
+
+/* pointer effects only on devices with a mouse */
+if(matchMedia('(hover:hover)').matches){
+  addEventListener('pointermove',e=>{const s=$('#spot');s.style.left=e.clientX+'px';s.style.top=e.clientY+'px'},{passive:true});
+  $$('.card').forEach(c=>c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')},{passive:true}));
+}
+
+
+/* glowing road light-trails over the hero photo */
+(function(){
+  const cv=$('#road'),ctx=cv.getContext('2d'),hero=$('.hero');
+  const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let W,H,vx,vy,trails=[],run=false,vis=true;
+  const cols=['#4be3b0','#4be3b0','#ffffff','#7fd8ff'];
+  function size(){
+    const dpr=Math.min(devicePixelRatio||1,1.5);W=cv.clientWidth;H=cv.clientHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+    const mob=W<761;vx=W*(mob?.5:.3);vy=H*(mob?.64:.6);
+    trails=Array.from({length:mob?34:58},()=>({lane:Math.random()*2-1,z:Math.random(),v:.0028+Math.random()*.005,c:cols[Math.random()*cols.length|0]}));
+  }
+  function pos(l,z){const s=Math.pow(z,2.4);return{x:vx+l*W*(W<761?.9:.5)*s,y:vy+(H*1.05-vy)*s,s}}
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    const g=ctx.createRadialGradient(vx,vy,0,vx,vy,W*.42);g.addColorStop(0,'rgba(75,227,176,.30)');g.addColorStop(.45,'rgba(75,227,176,.08)');g.addColorStop(1,'transparent');
+    ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+    ctx.strokeStyle='rgba(75,227,176,.35)';ctx.lineWidth=1.2;
+    [-1,1].forEach(l=>{const a=pos(l*.95,.02),b=pos(l*.95,1);ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke()});
+    ctx.lineCap='round';
+    trails.forEach(tr=>{
+      const a=pos(tr.lane,tr.z),b=pos(tr.lane,Math.min(1,tr.z+.06));
+      ctx.strokeStyle=tr.c;ctx.globalAlpha=Math.min(.95,a.s*1.5+.08);ctx.lineWidth=.6+b.s*4.2;
+      ctx.shadowColor=tr.c;ctx.shadowBlur=7*b.s+1;
+      ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();
+      if(!still){tr.z+=tr.v*(.4+tr.z*1.6);if(tr.z>1){tr.z=.01;tr.lane=Math.random()*2-1}}
+    });
+    ctx.shadowBlur=0;ctx.globalAlpha=1;
+  }
+  function loop(){if(!run)return;draw();requestAnimationFrame(loop)}
+  function start(){if(!run&&vis&&!document.hidden&&!still){run=true;requestAnimationFrame(loop)}}
+  size();draw();
+  addEventListener('resize',()=>{size();draw()});
+  new IntersectionObserver(e=>{vis=e[0].isIntersecting;if(vis)start();else run=false},{threshold:0}).observe(hero);
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)run=false;else start()});
+  start();
+})();
+
+/* ticker */
+const items=['EV Charging','Battery Swapping','Network Planning','Fleet Electrification','Charger Strategy','CPO Integration','Station Operations','Energy Monitoring','KPI Reporting','Telematics'];
+const row='<span>'+items.join('</span><span>')+'</span>';$('#tk').innerHTML=row+row;
+
+/* reveal + counters */
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;e.target.classList.add('in');
+  e.target.querySelectorAll('[data-n]').forEach(el=>{const to=+el.dataset.n;let v=0;const iv=setInterval(()=>{el.textContent=++v;if(v>=to)clearInterval(iv)},170)});
+  io.unobserve(e.target);
+}),{threshold:.08,rootMargin:'0px 0px -30px 0px'});
+$$('.rv').forEach(el=>io.observe(el));
+
+$('#copy').onclick=async()=>{try{await navigator.clipboard.writeText('ddevyani283@gmail.com')}catch(e){}
+  const t=$('#toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)};
+</script>
+</body>
+</html>
+
+
+
